@@ -10,6 +10,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductAlertsComponent } from './components/product-alerts/product-alerts.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     HelloNgifComponent,
     HelloDiComponent,
     ProductListComponent,
-    TopBarComponent
+    TopBarComponent,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
