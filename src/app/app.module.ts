@@ -14,6 +14,7 @@ import { ProductAlertsComponent } from './components/product-alerts/product-aler
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './components/shipping/shipping.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     TopBarComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
     ]),
     HttpClientModule
 
